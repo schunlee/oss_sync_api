@@ -289,5 +289,5 @@ def main(app_code, direct, base_paths, uploader, app_type, token=""):
 
 if __name__ == "__main__":
     app = hug.API(__name__).http.server()
-    run(app=app, reloader=True, host="0.0.0.0", port="80")
+    run(app=app, reloader=True, host="0.0.0.0", port="443")
 
