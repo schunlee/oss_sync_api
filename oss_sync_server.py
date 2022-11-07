@@ -290,7 +290,7 @@ def main(app_code, direct, base_paths, uploader, app_type, token=""):
 if __name__ == "__main__":
     app = hug.API(__name__).http.server()
     try:
-        run(app=app, reloader=True, host="127.0.0.1", port=8088)
+        run(app=app, reloader=True, host="0.0.0.0.0", port=80)
     except:
         kill_seized_port(8000)  # 杀掉占8000端口的进程，重启服务
-        run(app=app, reloader=True, host="127.0.0.1", port=8088)
+        run(app=app, reloader=True, host="0.0.0.0", port=80)
