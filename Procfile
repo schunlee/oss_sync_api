@@ -1,1 +1,0 @@
-web: python oss_sync_server.py
