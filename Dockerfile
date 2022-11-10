@@ -20,4 +20,4 @@ WORKDIR /app
 #EXPOSE 8000
 
 # execute the Flask app
-CMD ["python3", "oss_sync_server.py"]
+CMD ["python3", "job_list.py"]
